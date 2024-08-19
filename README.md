@@ -17,17 +17,18 @@ Set up environment variables.
   #Do not change
 - PGUSER="postgres"
 
-Set up docker
+## Development
+Once you are ready to develop
+
 ```bash
-docker-compose up
+docker-compose up --build
 ```
 
-Once the image builds and both containers are up and running, you can run 
+Then run
 
 ```bash
 npm run migrate-dev
 ```
-
 to set up initial migrations for prisma. 
 
 Start modifying your code in your host environment and the mounts will automatically update your code in the container. No re-run is necessary. 
